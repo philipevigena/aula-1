@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Cadastro de Amigos</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+	<link rel="stylesheet" href="css/jquery-ui.theme.css">
+
+	<style>
+		#dialog {
+			display: none;
+		}
+	</style>
+
+</head>
+
+<body class="container">
+	<h1>Sistema de Amigos</h1>
+	<h2>cadastrar amigo</h2>
+	<hr>
+	<form method="get">
+		<div class="row">
+			<div class="form-group col-md-4 col-sm-6">
+				<label for="nome">Nome</label>
+				<input title="digite seu nome" type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2 class="form-control" placeholder="Entre com o seu nome" maxlength="50" minlength="3" autofocus="autofocus"
+				 required="required" id="nome" type="text" name="nome">
+				  <span id="helpBlock2" class="help-block"> </span>
+			</div>
+			<div class="form-group has-warning  col-md-4 col-sm-6">
+				<label> <class="control-label" for="inputSuccess1"> Email</label>
+				<input required="required" class="form-control has" placeholder="ex:usuario@usuario.com" type="email" name="email">
+			</div>
+			<div class="form-group col-md-4 col-sm-12"><label>Phone</label>
+				<input required="required" id="phone" class="form-control" placeholder="EX:11 965108076" type="phone" name="telefone">
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="form-group col-md-4"><label>CPF</label>
+				<input required="required" id="cpf" class="form-control" placeholder="000.000.000-00" type="text" name="telefone">
+
+			</div>
+			<div class="form-group col-md-4"><label>CEP</label>
+				<input required="required" id="cep" class="form-control" placeholder="EX:11 965108076" type="phone" name="telefone">
+
+			</div>
+			<div class="form-group col-md-4"><label>Nascimento</label>
+				<input required="required" id="nascimento" class="form-control" placeholder="DD/MM/YYYY" type="text" name="Nascimento">
+
+			</div>
+
+		</div>
+		<div class="form-group"><label>Senha</label>
+			<input required="required" class="form-control" placeholder="password" type="password" name="senha">
+
+		</div>
+
+		<div class="form-group">
+			<label>Fotos</label>
+			<input accept="image/*" type="file" name="">
+		</div>
+
+
+		<button class="btn btn-warning" type="reset">Limpar</button>
+		<button class="btn btn-success" type="submit">Salvar</button>
+		<button class="btn btn-info" id="btn-testar" type="button">Testar</button>
+		<button class="btn btn-info" id="btn-incluir" type="button">incluir nome</button>
+		<button class="btn btn-danger" id="btn-botaobox" type="button">Bootbox</button>
+
+		<div id="dialog" title="Atenção">
+			<p>Obrigado por clicar troxa</p>
+		</div>
+
+	</form>
+	<br><br><br>
+	<a href="primeirosite.html">voltar </a>
+
+	<script>
+		// alert("eaeee djow");
+
+		/*var mensagem = "bom dia";
+
+		var a =parseInt( prompt("qual a nota do primeiro bimestre"));
+		var b =parseInt( prompt("qual a nota do segundo bimestre"));
+
+		var mediaNota = (a + b) / 2;
+
+		if(mediaNota >= 6)
+		{
+			mensagem = "aprovado";
+		}
+
+		else if(mediaNota >= 4.5)
+		{
+		
+		mensagem = "Conselho Regional Estudantil";
+
+		}
+		else
+		{
+			mensagem = "reprovado";
+		}
+		alert("sua nota foi: " + mediaNota + " e você foi: " + mensagem);*/
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/datepicker-ptbr.js"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/bootbox.min.js"></script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.min.js"></script>
+
+	<script src="js/cadastrar.js"></script>
+
+</body>
+
+</html>
